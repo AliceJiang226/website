@@ -345,3 +345,28 @@ main {
 @media (max-width: 900px) {
   .colorful-dots { display: none; }
 }
+.realistic-snowflakes {
+  position: fixed;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  z-index: 20;
+  pointer-events: none;
+}
+.left-snowflakes {
+  left: 0;
+}
+.right-snowflakes {
+  right: 0;
+}
+.real-snowflake {
+  width: 48px;
+  height: 48px;
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+  margin: 0 4px;
+}
+@media (max-width: 900px) {
+  .realistic-snowflakes { display: none; }
+}
