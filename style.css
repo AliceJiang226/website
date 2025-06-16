@@ -7,6 +7,7 @@ body {
     background: #2d0101;
     color: #fdf6e3;
     min-height: 100vh;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="12" fill="%23e63946" stroke="%23fdf6e3" stroke-width="3"/><rect x="13" y="2" width="6" height="8" rx="2" fill="%23fdf6e3"/></svg>') 16 16, auto;
 }
 header {
     background: #8b0000;
@@ -159,6 +160,9 @@ footer {
     left: 18px;
     opacity: 0.6;
 }
+.ornament::marker {
+    display: none;
+}
 .ornament.pattern-stripes {
     background: repeating-linear-gradient(135deg, #e63946, #e63946 8px, #fdf6e3 8px, #fdf6e3 16px);
 }
@@ -168,28 +172,17 @@ footer {
 .ornament.pattern-star {
     background: #ffd700 url('data:image/svg+xml;utf8,<svg width="38" height="38" xmlns="http://www.w3.org/2000/svg"><polygon points="19,5 22,15 32,15 24,21 27,31 19,25 11,31 14,21 6,15 16,15" fill="%23fdf6e3"/></svg>') no-repeat center/cover;
 }
-.ornaments-top {
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-    margin-top: 18px;
-    margin-bottom: 0;
+.ornament.ornament-red {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
-.ornaments-side {
-    position: absolute;
-    top: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    z-index: 2;
-    height: 80%;
-    justify-content: space-between;
+.ornament.ornament-gold {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
-.ornaments-side.left {
-    left: -60px;
+.ornament.ornament-green {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
-.ornaments-side.right {
-    right: -60px;
+.ornament.ornament-white {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 @media (max-width: 900px) {
     .ornaments-side { display: none; }
@@ -204,4 +197,148 @@ main {
     background: rgba(255,255,255,0.03);
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.movie-intro-section {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+.movie-intro-flex {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    background: rgba(253,246,227,0.08);
+    border: 3px solid #fdf6e3;
+    border-radius: 1.5em;
+    padding: 2em;
+    max-width: 800px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.movie-intro-text {
+    max-width: 400px;
+}
+.movie-intro-img-large {
+    width: 180px;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.christmas-tree-section {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 2em 0;
+}
+.christmas-tree {
+  position: relative;
+  width: 180px;
+  height: 260px;
+  margin: 0 auto;
+}
+.tree-layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, #0b6623 80%, #228B22 100%);
+  border-radius: 0 0 90px 90px;
+}
+.layer1 { top: 0; width: 70px; height: 70px; z-index: 3; }
+.layer2 { top: 50px; width: 120px; height: 80px; z-index: 2; }
+.layer3 { top: 110px; width: 170px; height: 100px; z-index: 1; }
+.tree-trunk {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 32px;
+  height: 44px;
+  background: #8b5c2a;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.tree-star {
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  width: 36px;
+  height: 36px;
+  background: url('data:image/svg+xml;utf8,<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><polygon points="18,2 21,13 34,13 23,21 27,34 18,26 9,34 13,21 2,13 15,13" fill="%23ffd700"/></svg>') no-repeat center/contain;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.tree-ornament {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.ornament1 { background: #e63946; left: 40px; top: 50px; }
+.ornament2 { background: #ffd700; left: 110px; top: 70px; }
+.ornament3 { background: #008000; left: 60px; top: 130px; }
+.ornament4 { background: #fdf6e3; left: 120px; top: 150px; }
+.ornament5 { background: #00bfff; left: 80px; top: 90px; }
+.ornament6 { background: #ff69b4; left: 90px; top: 40px; }
+.ornament7 { background: #ffa500; left: 50px; top: 170px; }
+.ornament8 { background: #9400d3; left: 100px; top: 120px; }
+.ornament9 { background: #00fa9a; left: 70px; top: 180px; }
+.tree-bow {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml;utf8,<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><path d="M16 16 Q8 8, 2 16 Q8 24, 16 16 Q24 24, 30 16 Q24 8, 16 16" fill="%23e63946" stroke="%23fff" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="%23ffd700" stroke="%23fff" stroke-width="2"/></svg>') no-repeat center/contain;
+  z-index: 6;
+}
+.bow1 { left: 30px; top: 30px; }
+.bow2 { left: 120px; top: 60px; }
+.bow3 { left: 80px; top: 160px; }
+
+.site-ornaments {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 1.5em 0 1em 0;
+}
+.site-ornament {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.big-red { background: #e63946; }
+.big-gold { background: #ffd700; }
+.big-green { background: #008000; }
+.big-blue { background: #00bfff; }
+.big-white { background: #fdf6e3; }
+.site-bow {
+  width: 48px;
+  height: 48px;
+  background: url('data:image/svg+xml;utf8,<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><path d="M24 24 Q10 10, 2 24 Q10 38, 24 24 Q38 38, 46 24 Q38 10, 24 24" fill="%23e63946" stroke="%23fff" stroke-width="3"/><circle cx="24" cy="24" r="8" fill="%23ffd700" stroke="%23fff" stroke-width="3"/></svg>') no-repeat center/contain;
+}
+.footer-ornaments { margin-top: 0.5em; }
+#snowflakes-container {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+.snowflake {
+  position: absolute;
+  top: -40px;
+  color: #fff;
+  font-size: 1.5em;
+  opacity: 0.85;
+  user-select: none;
+  pointer-events: none;
+  text-shadow: 0 0 8px #fff, 0 0 16px #b3e0ff;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0.7;
+  }
 }

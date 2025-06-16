@@ -7,95 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ornaments ornaments-top">
-        <span class="ornament ornament-red"></span>
-        <span class="ornament ornament-gold"></span>
-        <span class="ornament ornament-green"></span>
-        <span class="ornament ornament-white"></span>
-        <span class="ornament ornament-gold"></span>
-        <span class="ornament ornament-red"></span>
-    </div>
+    <div id="snowflakes-container"></div>
     <header>
         <h1 class="main-title">Christmas Movies</h1>
     </header>
     <main>
-        <div class="ornaments ornaments-side left">
-            <span class="ornament ornament-green pattern-stripes"></span>
-            <span class="ornament ornament-gold pattern-star"></span>
-            <span class="ornament ornament-red pattern-snow"></span>
-            <span class="ornament ornament-white"></span>
-        </div>
-        <div class="ornaments ornaments-side right">
-            <span class="ornament ornament-gold pattern-star"></span>
-            <span class="ornament ornament-white pattern-snow"></span>
-            <span class="ornament ornament-green pattern-stripes"></span>
-            <span class="ornament ornament-red"></span>
-        </div>
         <section class="intro">
             <p>Celebrate the holiday season with these fun and classic Christmas movies! Grab some hot cocoa, cozy up, and enjoy the festive spirit.</p>
         </section>
+        <section class="christmas-tree-section">
+            <div class="christmas-tree">
+                <div class="tree-layer layer1"></div>
+                <div class="tree-layer layer2"></div>
+                <div class="tree-layer layer3"></div>
+                <div class="tree-trunk"></div>
+                <div class="tree-star"></div>
+                <div class="tree-ornament ornament1"></div>
+                <div class="tree-ornament ornament2"></div>
+                <div class="tree-ornament ornament3"></div>
+                <div class="tree-ornament ornament4"></div>
+                <div class="tree-ornament ornament5"></div>
+                <div class="tree-ornament ornament6"></div>
+                <div class="tree-ornament ornament7"></div>
+                <div class="tree-ornament ornament8"></div>
+                <div class="tree-ornament ornament9"></div>
+                <div class="tree-bow bow1"></div>
+                <div class="tree-bow bow2"></div>
+                <div class="tree-bow bow3"></div>
+            </div>
+        </section>
+        <div class="site-ornaments">
+            <div class="site-ornament big-red"></div>
+            <div class="site-ornament big-gold"></div>
+            <div class="site-ornament big-green"></div>
+            <div class="site-bow"></div>
+        </div>
+        <section class="movie-intro-section">
+            <div class="movie-intro-flex">
+                <div class="movie-intro-text">
+                    <h2>Home Alone</h2>
+                    <p>
+                        "Home Alone" is a beloved holiday comedy about 8-year-old Kevin McCallister, who is accidentally left behind when his family goes to Paris for Christmas. Kevin must defend his home from two bumbling burglars using clever traps and his quick wit, all while discovering the true meaning of family and the holiday spirit.
+                    </p>
+                </div>
+                <img class="movie-intro-img-large" src="https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg" alt="Home Alone Movie Poster">
+            </div>
+        </section>
         <section class="movies-list">
-            <div class="movie-card" onclick="flipCard(this)">
-                <div class="movie-card-inner">
-                    <div class="movie-card-front">
-                        <img class="movie-intro-img" src="https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg" alt="Home Alone Icon">
-                        <h2>Home Alone</h2>
-                        <p>When 8-year-old Kevin is accidentally left behind while his family flies to Paris for Christmas, he must defend his home from two bumbling burglars with clever traps and holiday spirit.</p>
-                    </div>
-                    <div class="movie-card-back">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Home_alone_poster.jpg" alt="Home Alone Poster">
-                        <p>Home Alone (1990)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="movie-card" onclick="flipCard(this)">
-                <div class="movie-card-inner">
-                    <div class="movie-card-front">
-                        <img class="movie-intro-img" src="https://upload.wikimedia.org/wikipedia/en/d/df/Elf_movie.jpg" alt="Elf Icon">
-                        <h2>Elf</h2>
-                        <p>Buddy, a human raised by elves at the North Pole, travels to New York City to find his real father and discovers the true meaning of Christmas along the way.</p>
-                    </div>
-                    <div class="movie-card-back">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Elf_movie.jpg" alt="Elf Poster">
-                        <p>Elf (2003)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="movie-card" onclick="flipCard(this)">
-                <div class="movie-card-inner">
-                    <div class="movie-card-front">
-                        <img class="movie-intro-img" src="https://upload.wikimedia.org/wikipedia/en/1/1d/Polar_Express_poster.jpg" alt="Polar Express Icon">
-                        <h2>The Polar Express</h2>
-                        <p>A young boy embarks on a magical train ride to the North Pole, learning about friendship, bravery, and the wonder of believing in the spirit of Christmas.</p>
-                    </div>
-                    <div class="movie-card-back">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Polar_Express_poster.jpg" alt="The Polar Express Poster">
-                        <p>The Polar Express (2004)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="movie-card" onclick="flipCard(this)">
-                <div class="movie-card-inner">
-                    <div class="movie-card-front">
-                        <img class="movie-intro-img" src="https://upload.wikimedia.org/wikipedia/en/6/6b/How_the_Grinch_Stole_Christmas_film_poster.jpg" alt="Grinch Icon">
-                        <h2>How the Grinch Stole Christmas</h2>
-                        <p>The Grinch, a grouchy recluse, tries to steal Christmas from the Whos of Whoville, but ultimately discovers the holiday’s true meaning and the power of community.</p>
-                    </div>
-                    <div class="movie-card-back">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/How_the_Grinch_Stole_Christmas_film_poster.jpg" alt="How the Grinch Stole Christmas Poster">
-                        <p>How the Grinch Stole Christmas (2000)</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Movie cards removed as requested -->
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Christmas Movies</p>
-        <div class="ornaments">
-            <span class="ornament ornament-red"></span>
-            <span class="ornament ornament-green"></span>
-            <span class="ornament ornament-gold"></span>
-            <span class="ornament ornament-white"></span>
+        <div class="site-ornaments footer-ornaments">
+            <div class="site-ornament big-blue"></div>
+            <div class="site-ornament big-white"></div>
+            <div class="site-bow"></div>
         </div>
     </footer>
     <script src="script.js"></script>
