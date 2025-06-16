@@ -10,6 +10,7 @@
     <header>
         <h1 class="main-title">Christmas Movies</h1>
     </header>
+    <div id="survey-feedback-bar" class="survey-feedback-bar"></div>
     <main>
         <section class="intro">
             <p>Celebrate the holiday season with these fun and classic Christmas movies! Grab some hot cocoa, cozy up, and enjoy the festive spirit.</p>
@@ -55,6 +56,15 @@
         <section class="movies-list">
             <!-- Movie cards removed as requested -->
         </section>
+        <section class="survey-section">
+          <h2>Survey: What is your favorite movie?</h2>
+          <form id="movie-survey-form">
+            <label for="favorite-movie">Your favorite movie:</label>
+            <input type="text" id="favorite-movie" name="favorite-movie" required placeholder="Type your favorite movie...">
+            <button type="submit">Submit</button>
+          </form>
+          <div id="survey-response" class="survey-response"></div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Christmas Movies</p>
@@ -77,16 +87,6 @@
       <span class="dot dot-red"></span>
       <span class="dot dot-blue"></span>
       <span class="dot dot-pink"></span>
-    </div>
-    <div class="realistic-snowflakes left-snowflakes">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7582.png" alt="Snowflake">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7583.png" alt="Snowflake">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7584.png" alt="Snowflake">
-    </div>
-    <div class="realistic-snowflakes right-snowflakes">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7585.png" alt="Snowflake">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7586.png" alt="Snowflake">
-      <img class="real-snowflake" src="https://pngimg.com/d/snowflake_PNG7587.png" alt="Snowflake">
     </div>
     <script src="script.js"></script>
 </body>
